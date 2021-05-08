@@ -228,3 +228,54 @@ Before we get started, keep in mind:
     at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
 [error] 
 [error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-05-08T18:12:44.093Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T18:12:44.096Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-08T18:12:44.096Z] CLI Version:   9.10.2
+[debug] [2021-05-08T18:12:44.097Z] Platform:      win32
+[debug] [2021-05-08T18:12:44.097Z] Node Version:  v14.16.1
+[debug] [2021-05-08T18:12:44.098Z] Time:          Sat May 08 2021 23:42:44 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T18:12:44.099Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T18:12:44.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T18:12:44.111Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ranji\Documents\GitHub\chat-box
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2021-05-08T18:12:48.769Z] > refreshing access token with scopes: []
+[debug] [2021-05-08T18:12:48.770Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-08T18:12:49.292Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 08 May 2021 18:12:49 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-08T18:12:49.322Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T18:12:50.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T18:12:50.062Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T18:12:50.064Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T18:12:50.429Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
