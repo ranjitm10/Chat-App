@@ -10,12 +10,19 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+    apiKey: "AIzaSyAryU9D3LvsOPERBn9bYZqKjkLeD3aYLVk",
+    authDomain: "chat-app-fa8ac.firebaseapp.com",
+    projectId: "chat-app-fa8ac",
+    storageBucket: "chat-app-fa8ac.appspot.com",
+    messagingSenderId: "679020995868",
+    appId: "1:679020995868:web:512259bdbcf13a7f2686d9",
+    measurementId: "G-NH4Z7D7N6V"
+
 })
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-const analytics = firebase.analytics();
+
 
 
 function App() {
@@ -25,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1></h1>
         <SignOut />
       </header>
 
@@ -97,9 +104,9 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message....." />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>⏏️Send</button>
 
     </form>
   </>)
