@@ -1,0 +1,230 @@
+[debug] [2021-05-08T15:59:46.418Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T15:59:46.419Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-08T15:59:46.420Z] CLI Version:   9.10.2
+[debug] [2021-05-08T15:59:46.420Z] Platform:      win32
+[debug] [2021-05-08T15:59:46.420Z] Node Version:  v14.16.1
+[debug] [2021-05-08T15:59:46.421Z] Time:          Sat May 08 2021 21:29:46 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T15:59:46.421Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T15:59:46.427Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T15:59:46.427Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ranji\Documents\GitHub\chat-box
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2021-05-08T15:59:51.184Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T15:59:51.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T15:59:51.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T15:59:52.000Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T15:59:52.393Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-05-08T16:00:06.013Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T16:00:06.015Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-05-08T16:00:06.015Z] CLI Version:   9.10.2
+[debug] [2021-05-08T16:00:06.016Z] Platform:      win32
+[debug] [2021-05-08T16:00:06.016Z] Node Version:  v14.16.1
+[debug] [2021-05-08T16:00:06.016Z] Time:          Sat May 08 2021 21:30:06 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T16:00:06.016Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T16:00:06.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T16:00:06.024Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[debug] [2021-05-08T16:00:06.025Z] [iam] checking project fireship-demos for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-08T16:00:06.026Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-08T16:00:06.027Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-08T16:00:06.530Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 08 May 2021 16:00:06 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-08T16:00:06.547Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-demos:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-08T16:00:08.467Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 08 May 2021 16:00:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1447","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-08T16:00:08.469Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project fireship-demos:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-05-08T16:00:08.471Z] > refreshing access token with scopes: []
+[debug] [2021-05-08T16:00:08.471Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-08T16:00:08.876Z] <<< HTTP RESPONSE 200 {"date":"Sat, 08 May 2021 16:00:09 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-08T16:00:08.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T16:00:09.466Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T16:00:09.467Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T16:00:09.467Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T16:00:09.816Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-05-08T16:00:19.437Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T16:00:19.439Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-08T16:00:19.439Z] CLI Version:   9.10.2
+[debug] [2021-05-08T16:00:19.439Z] Platform:      win32
+[debug] [2021-05-08T16:00:19.439Z] Node Version:  v14.16.1
+[debug] [2021-05-08T16:00:19.440Z] Time:          Sat May 08 2021 21:30:19 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T16:00:19.440Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T16:00:19.446Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T16:00:19.446Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ranji\Documents\GitHub\chat-box
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2021-05-08T16:00:26.270Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T16:00:26.866Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T16:00:26.867Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T16:00:26.867Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T16:00:27.193Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-05-08T16:00:30.197Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T16:00:30.199Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-08T16:00:30.199Z] CLI Version:   9.10.2
+[debug] [2021-05-08T16:00:30.199Z] Platform:      win32
+[debug] [2021-05-08T16:00:30.199Z] Node Version:  v14.16.1
+[debug] [2021-05-08T16:00:30.200Z] Time:          Sat May 08 2021 21:30:30 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T16:00:30.200Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T16:00:30.206Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T16:00:30.206Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ranji\Documents\GitHub\chat-box
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2021-05-08T16:00:33.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T16:00:33.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T16:00:33.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T16:00:33.869Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T16:00:34.161Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-05-08T16:01:32.490Z] ----------------------------------------------------------------------
+[debug] [2021-05-08T16:01:32.492Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-08T16:01:32.493Z] CLI Version:   9.10.2
+[debug] [2021-05-08T16:01:32.493Z] Platform:      win32
+[debug] [2021-05-08T16:01:32.493Z] Node Version:  v14.16.1
+[debug] [2021-05-08T16:01:32.494Z] Time:          Sat May 08 2021 21:31:32 GMT+0530 (India Standard Time)
+[debug] [2021-05-08T16:01:32.494Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-08T16:01:32.499Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-08T16:01:32.500Z] > authorizing via signed-in user (ranjitmohite00@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ranji\Documents\GitHub\chat-box
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2021-05-08T16:01:35.178Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos [none]
+[debug] [2021-05-08T16:01:35.790Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos 403
+[debug] [2021-05-08T16:01:35.790Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-08T16:01:35.791Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-08T16:01:36.103Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\ranji\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
