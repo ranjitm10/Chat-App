@@ -106,7 +106,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message....." />
 
-      <button type="submit" disabled={!formValue}><span>⏩</span></button>
+      <button type="submit" disabled={!formValue}><span role="img" aria-label="emoji">⏩</span></button>
 
     </form>
   </>)
@@ -120,7 +120,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="chat"/>
       <p>{text}</p>
     </div>
   </>)
