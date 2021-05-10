@@ -53,7 +53,6 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>If we find your content doesn’t follow our policies You will get block</p>
     </>
   )
 
